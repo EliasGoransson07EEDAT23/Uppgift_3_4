@@ -14,7 +14,7 @@ namespace uppgift_3_4
                 Console.WriteLine("Skriv nu antal övriga sekunder:");
                 int sec = int.Parse(Console.ReadLine());
 
-                if (min >= 4 && sec > 20 || min <= 2 && sec < 45)
+                if (min > 4 || min == 4 && sec > 20 || min < 2 || min == 2 && sec < 45)
                 {
                     Console.WriteLine("Denna låte var tyvärr inte giltig för att spela på radion, därmed kommer den inte läggas med i listan.");
                     Console.ReadKey();
